@@ -1,0 +1,430 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'header header header'
+    'first second third'
+    'fourth fifth sixth'
+    'seven eigth nine'
+    'ten eleven twelve';    
+}
+.container::before{
+    content: "";
+    background: url('../img/orderbackgrnd.jpeg') no-repeat center center /cover;
+    position: absolute;
+    transform: translateZ(-1px) scale(2.2);
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+#header{
+    grid-area: header;
+}
+#first{
+    grid-area: first;
+}
+#second{
+    grid-area: second;
+}
+#third{
+    grid-area: third;
+}
+#fourth{
+    grid-area: fourth;
+}
+#fifth{
+    grid-area: fifth;
+}
+#sixth{
+    grid-area: sixth;
+}
+#seven{
+    grid-area: seven;
+}
+#eigth{
+    grid-area: eigth;
+}
+#nine{
+    grid-area: nine;
+}
+#ten{
+    grid-area: ten;
+}
+#eleven{
+    grid-area: eleven;
+}
+#twelve{
+    grid-area: twelve;
+}
+#header{
+    margin-top: 95px;
+}
+/* for the menu bar  */
+.box1{
+    /* border: 2px solid black; */
+    /* background-color: rgba(112, 18, 18, 0.432); */
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+    text-decoration: underline;
+}
+/* for all the item boxes */
+.box{
+    border: 2px solid brown;
+    background-color: rgba(252, 253, 191, 0.5);
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+/* for item 1 */
+#first img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#first h2{
+    display: flex;
+    justify-content: center;
+}
+#first button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#first button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 2 */
+#second img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#second h2{
+    display: flex;
+    justify-content: center;
+}
+#second button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#second button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 3  */
+#third img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#third h2{
+    display: flex;
+    justify-content: center;
+}
+#third button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#third button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 4 */
+#fourth img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#fourth h2{
+    display: flex;
+    justify-content: center;
+}
+#fourth button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#fourth button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 5 */
+#fifth img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#fifth h2{
+    display: flex;
+    justify-content: center;
+}
+#fifth button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#fifth button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 6 */
+#sixth img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#sixth h2{
+    display: flex;
+    justify-content: center;
+}
+#sixth button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#sixth button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 7 */
+#seven img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#seven h2{
+    display: flex;
+    justify-content: center;
+}
+#seven button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#seven button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 8 */
+#eight img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#eight h2{
+    display: flex;
+    justify-content: center;
+}
+#eight button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#eight button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 9 */
+#nine img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#nine h2{
+    display: flex;
+    justify-content: center;
+}
+#nine button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#nine button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 10 */
+#ten img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#ten h2{
+    display: flex;
+    justify-content: center;
+}
+#ten button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#ten button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 11 */
+#eleven img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#eleven h2{
+    display: flex;
+    justify-content: center;
+}
+#eleven button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#eleven button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* for item 12 */
+#twelve img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#twelve h2{
+    display: flex;
+    justify-content: center;
+}
+#twelve button{
+    display: block;
+    margin: 7px auto;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(236, 123, 17);
+    border-radius: 10px;
+    padding: 5px;
+}
+#twelve button:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+/* we can add more items by following above process */
+@media only screen and (min-width:193px) and (max-width:1346px){
+    #navbar{
+        flex-direction:row;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    #logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .container{
+        grid-template-columns: 1fr; 
+        /* grid-template-rows: 1fr ; */
+        grid-template-areas:
+        'header header header'
+        'first first first' 
+        'second second second'
+        'third third third'
+        'fourth fourth fourth' 
+        'fifth fifth fifth' 
+        'sixth sixth sixth'
+        'seven seven seven' 
+        'eigth eigth eigth' 
+        'nine nine nine'
+        'ten ten ten' 
+        'eleven eleven eleven' 
+        'twelve twelve twelve';    
+
+    }
+    .container::before{
+        background: none;
+        transform: translateZ(-1px) scale(1);
+    }
+    .box1{
+        color: brown;
+
+    }
+    .box{
+        width: 340px;
+    }
+
+}

@@ -1,0 +1,138 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'item1'
+    'item2';  
+}
+.container::before{
+    content: "";
+    background: url('../img/contct.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#item1{
+    grid-area: item1;
+}
+
+#item2{
+    grid-area: item2;
+}
+.box1{
+    background-color: rgb(241, 241, 209,0.3);
+    /* border: 2px solid blue; */
+    height: 179px;
+    width: 415px;
+    margin-top: 156px;
+    margin-left: 306px;
+    margin-right: 0px;
+    border-radius: 20px;
+}
+.box2{
+    background-color: rgb(241, 241, 209,0.3);
+    /* border: 2px solid blue; */
+    height: 192px;
+    width: 415px;
+    margin-top: 30px;
+    margin-left: 306px;
+    border-radius:20px;
+}
+#item1 h2{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px black;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#item1 p{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color:whitesmoke;
+    font-size: 1.4rem;
+}
+#item2 h2{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px black;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#item2 li{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    list-style: none;
+    /* background-color: blanchedalmond; */
+}
+#item2 #fb{
+    color:white;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 6px;
+}
+#item2 #fb:hover{
+    text-decoration: underline;
+}
+#item2 img{
+    height: 30px;
+    width:30px;
+    margin-right: 10px;
+}
+#item2 #twt{
+    color:blue;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 6px;
+
+}
+#item2 #twt:hover{
+    text-decoration: underline;
+}
+#item2 #inst{
+    color:white;
+    background-color: rgb(192, 11, 41);
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    font-family: 'Dancing Script', cursive;
+
+}
+#item2 #inst:hover{
+    text-decoration: underline;
+}
+@media only screen and (min-width:197px) and (max-width:1346px){
+    #navbar{
+        flex-direction:row;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+    }
+    #logo img{
+        width:40px;
+        height:40px;
+    }
+    /* .container::before{
+        background: none;
+    } */
+    .box1{
+        margin-left: 10px;
+        width: 340px;
+    }
+   .box2{
+        margin-left: 10px;
+        width: 340px;
+    }
+    .container::before{
+       max-height: 100%;
+        max-width: 100%;
+    }
+}

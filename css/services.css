@@ -1,0 +1,125 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'headr headr headr'
+    'first second third';
+}
+.container::before{
+    content: "";
+    background: url('../img/backgrnd2.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#headr{
+    grid-area: headr;
+}
+
+#first{
+    grid-area: first;
+}
+#second{
+    grid-area: second;
+}
+#third{
+    grid-area: third;
+}
+.box1{
+    /* background-color: yellow; */
+    /* border: 2px solid black; */
+    height: 40px;
+    margin-top: 153px;  
+}
+.box1 h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: rgb(6, 75, 18);
+}
+.box{
+    background-color: rgb(241, 241, 209);
+    border: 2px solid blue;
+    height: 300px;
+    width: 415px;
+    margin-top: 15px;
+    margin: 15px 10px;
+    border-radius: 20px;
+}
+#first img{
+    max-height: 150px;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+#first h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#second img{
+    max-height: 150px;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+#second h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#third img{
+    max-height: 150px;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+#third h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.box p{
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+@media only screen and (min-width:197px) and (max-width:1346px){
+    #navbar{
+        flex-direction:row;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    #logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .container{
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        grid-template-areas:
+        'headr headr headr'
+        'first first first' 
+        'second second second' 
+        'third third third';
+    }
+    .container::before{
+        background: none;
+    }
+    body{
+        background: grey;
+    }
+    .box{
+        width: 340px;
+    }
+    
+}

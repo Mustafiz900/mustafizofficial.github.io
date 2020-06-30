@@ -1,0 +1,39 @@
+     /* navigation section  */
+    #navbar{
+        flex-direction:row;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    #logo img{
+        max-width: 40px;
+     max-height: 40px;
+    }
+    /* home section  */
+    #home{
+        height:380px;
+        padding: 3px 68px;
+    
+    }
+    #home::before{
+        height:380px
+    }
+    #home p{
+        font-size: 13px;
+    }
+    /* Offers section  */
+    #services{
+        flex-direction: column;
+    }
+    /* utility class */
+    .h-primary{
+        font-size: 26px;
+    }
+    .footer p{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
