@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussain's Fitness/Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<style>
+    /*css reset*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(17, 10, 10);
+        color: white;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+</style>
+<script>
+    function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = " You are too thin."
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = " You are healthy."
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "You have overweight."
+}
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+</script>
+
+<body>
+    <header class="header">
+        <!-- left class for logo -->
+        <div class="left">
+            <img src="img/logo.png">
+            <p>Hussain's Fitness </p>
+        </div>
+        <!-- mid class for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href="calculator.html">Fitness Calculator</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="calci_box">
+            <h3>Calculate your Body Mass Index(BMI)</h3>
+            <form name="bmiForm">
+                Your Weight(kg): <input type="text" name="weight" size="10"><br />
+                Your Height(cm): <input type="text" name="height" size="10"><br />
+                <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+                Your BMI: <input type="text" name="bmi" size="10"><br />
+                 Status: <input type="text" name="meaning" size="25"><br />
+                <input type="reset" value="Reset" />
+                </form>
+        </div>
+        <div class="bmi_detail">
+            <p id="para">
+                BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.
+                BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25. A score below 20 indicates that you may be underweight; a value above 25 indicates that you may be overweight.
+                You can calculate your BMI by using our BMI Calculator shown above, or by using the BMI Formula.
+            </p>
+            <h4>BMI categories:-</h4>
+            <p id="catgrs"> –> Underweight = <18.5 <br>
+                –> Normal weight = 18.5–24.9<br>
+                –> Overweight = 25–29.9<br>
+                –> Obesity = BMI of 30 or greater </p>
+        </div>
+
+</body>
+
+</html>

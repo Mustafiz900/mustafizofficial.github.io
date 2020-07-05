@@ -1,0 +1,76 @@
+.calci_box{
+    background-color: rgb(69, 76, 76);
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 250px;
+    width: 400px;
+    margin-top: 65px;
+    margin-left:450px ;
+    box-shadow: 0px 5px white;
+}
+.calci_box h3{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+.calci_box input[type='button']{
+    color:black;
+    font-weight: bold;
+    background-color: darkgreen;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 9px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.calci_box input[type='button']:hover{
+    border: 2px solid yellowgreen;
+}
+.calci_box input[type='reset']{
+    color:black;
+    font-weight: bold;
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 9px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.calci_box input[type='reset']:hover{
+    border: 2px solid yellowgreen;
+}
+.calci_box form{
+    text-align: center;
+    
+}
+/* The below part containing paragraph */
+.bmi_detail #para{
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 70px;
+}
+.bmi_detail h4{
+    margin-left: 70px;
+    color: darkgreen;
+    font-size: 1.1rem;
+}
+.bmi_detail #catgrs{
+    margin-left: 70px;
+
+}
+@media only screen and (min-width:193px) and (max-width:1342px){
+    .calci_box{
+        margin-left: 8px;
+        width: 390px;   
+    }
+    .bmi_detail #para{
+        margin-left: 10px;
+    }
+    .bmi_detail h4{
+        margin-left: 20px;
+    }
+    .bmi_detail #catgrs{
+        margin-left: 10px;
+    
+    }
+
+}

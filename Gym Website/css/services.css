@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('../img/service-backgrnd.jpeg');
+    background-size: cover;
+    /* color: white; */
+    font-family: 'Balsamiq Sans', cursive;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'heading heading heading heading'
+    'first second third fourth';
+}
+#heading{
+    grid-area: heading;
+}
+#first{
+    grid-area: first;
+}
+#second{
+    grid-area: second;
+}
+#third{
+    grid-area: third;
+}
+#fourth{
+    grid-area: fourth;
+}
+.headr{
+    /* background-color: yellow; */
+    display: block;
+    margin: auto;
+    /* border: 2px solid black; */
+    height: 40px;
+    margin-top: 80px;  
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.box{
+    background-color: rgb(241, 241, 209);
+    border: 2px solid blue;
+    height: 300px;
+    width: 300px;
+    margin-top: 15px;
+    margin: 15px 10px;
+    border-radius: 20px;
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    color:rgb(6, 61, 6);
+}
+.box p{
+    font-family: initial;
+    font-size: 1.1rem;
+    text-align: -webkit-center;
+}
+@media only screen and (min-width:193px) and (max-width:1342px){
+    .box-container{
+        grid-template-areas:
+        'heading'
+        'first' 
+        'second'
+        'third'
+        'fourth';
+    }
+    .box{
+        margin-left: 55px;
+        margin-top:0px;
+    }
+    .headr{
+        margin-left:80px;
+        margin-top:0px;
+    }
+}

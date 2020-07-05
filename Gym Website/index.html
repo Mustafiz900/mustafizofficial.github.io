@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussain's Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*css reset*/
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bckgrnd.jpg');
+            background-size: cover;
+            color: white;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+    </style>
+    <script>
+       function successful(){
+            alert('Form Submitted Successfully');
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <!-- left class for logo -->
+        <div class="left">
+         <img src="img/logo.png"> 
+         <p>Hussain's Fitness </p>
+        </div>
+        <!-- mid class for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href="calculator.html">Fitness Calculator</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+        <!-- right class for contact -->
+        <div class="right">
+            <p id="cntc">Contact us</p>
+                <p>hussainfit@gmail.com<br>
+                9740040367/6372697243
+            </p>
+        </div>
+    </header>
+    <div class="content">
+        <p>Our mission is to provide an Entertaining, Educational, Friendly and Inviting, Functional and Innovative experience of uncompromising quality that meets the Health and Fitness needs of the Entire Family.</p>
+    </div>
+    <div class="container">
+        <h3>Join the best Gym of Bangalore</h3>
+        <form name="myform" action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name" >
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <button class="btn" onclick="successful()" value="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="aside">
+        <h3>Follow us</h3>
+        <ul>
+            <li>
+                <img src="img/facebook.png">
+                <a href="https://facebook.com">Facebook </a></li>
+            <li>
+                <img src="img/twitter.png">
+                <a href="https://twitter.com">Twitter</a></li>
+            <li>
+                <img src="img/instagram.jpeg">
+                <a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
