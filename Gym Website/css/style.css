@@ -122,12 +122,12 @@ width: 37%;
 .aside{
     background-color: rgba(0, 128, 128, 0.699);
     display: inline-block;
-    margin-left: 410px;
+    margin-left: 484px;
     margin-right: 0px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     height: 200px;
-    width: 145px;
+    width: 83px;
 }
 .aside h3{
     display: flex;
